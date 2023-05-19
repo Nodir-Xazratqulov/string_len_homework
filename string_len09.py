@@ -9,4 +9,6 @@ def main(num1, num2):
     Returns:
         str: answer
     """
-    return
+
+    return num1 + num2
+print(main(425,81))
