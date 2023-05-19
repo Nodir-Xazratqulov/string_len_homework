@@ -8,4 +8,13 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    if len(s1)>len(s2) and len(s1)<len(s3) or len(s1)<len(s2) and len(s1)>len(s3):
+        return '['+s1+']'
+    else:
+        if len(s2)>len(s1) and len(s2)<len(s3) or len(s2)<len(s1) and len(s2)>len(s3):
+            return '['+s2+']'
+        else:
+            if len(s3)>len(s1) and len(s3)<len(s2) or len(s3)<len(s1) and len(s3)>len(s2):
+                return '['+s3+']'
+
+print(main('code', 'python', 'codeschool'))
