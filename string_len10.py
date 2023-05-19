@@ -8,4 +8,19 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+
+    
+    if s==s[::-1]:
+        return True
+    else:
+        return False
+
+    # x = len(s)
+    # y = str(x[:1])
+    # z = str(x-2)
+    # if y==z:
+    #     return True
+    # else:
+    #     return False
+
+print(main('abb'))
