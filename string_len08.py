@@ -8,4 +8,11 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    x = len(s)
+    if x%2==1:
+        i=x//2
+        return  s[i]
+    if x%2==0:
+        return s[(x)//2-1:(x)//2+1]
+
+print(main('absgdsde'))
